@@ -5,13 +5,15 @@ read -p "Enter your first Name : " name
 read -p "Enter your Last Name : " Lname
 read -p "Enter your Email Address : " email
 read -p "Enter your mobile Number : " mob
+read -p "Enter your 8-digit password : " password
 
 pat1="^[A-Z][a-z]{2,}$";
 pat2="^[A-Z][a-z]{2,}$";
 pat3="^[a-zA-Z0-9]+([.+-_][a-z-A-Z0-9]+)*@[a-zA-Z0-9]+.[a-z]{2,3}([.][a-z]{2})*$";
 pat4="^[91]{2}[ ]?[0-9]{10}$";
+pat5="[a-zA-Z0-9]{8,}";
 
-if [[ $mob =~ $pat4 ]]
+if [[ $password =~ $pat5 ]]
 then
         echo "yes";
 else
